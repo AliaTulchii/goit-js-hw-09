@@ -1,5 +1,5 @@
-import flatpickr from "flatpickr";
-import "flatpickr/dist/flatpickr.min.css";
+import flatpickr from 'flatpickr';
+import 'flatpickr/dist/flatpickr.min.css';
 import Notiflix from 'notiflix';
 
 
@@ -106,13 +106,4 @@ function updateTimer({ days, hours, minutes, seconds }) {
   refs.minutes.textContent = minutes;
   refs.seconds.textContent = seconds;
 }
-
-
-
-
-  
-
-
-
-
 
