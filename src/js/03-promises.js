@@ -37,15 +37,15 @@ function onPromiseCreate(evt) {
 
   for (let i = 1; i <= amount; i += 1) {
    
-    let promiseDelay = delayValue + delayStep * i;
-
-    createPromise(i, promiseDelay)
+  createPromise(i, delayValue)
   .then(({ position, delay }) => {
     Notiflix.Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
   })
   .catch(({ position, delay }) => {
     Notiflix.Notify.warning(`❌ Rejected promise ${position} in ${delay}ms`);
-  });    
+  }); 
+  
+    delayValue += delayStep;
   }
 }
 

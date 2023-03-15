@@ -54,7 +54,7 @@ const timer = {
             const deltaTime = selectedDate - currentTime;
             const { days, hours, minutes, seconds } = convertMs(deltaTime);
 
-            if (deltaTime < 1000) {
+            if (deltaTime < 100) {
                 clearInterval(this.intervalId);
                 this.isActive = false;
                 refs.btnStart.disabled = false;
